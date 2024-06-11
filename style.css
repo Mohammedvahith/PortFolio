@@ -1,7 +1,7 @@
 body {
   background-color: rgb(181, 181, 181);
 }
-h2, .name {
+h2{
   color:  rgb(37, 59, 255);
   font-size:50px;"
 }
@@ -13,4 +13,8 @@ p {
 }
 li {
   font-size: 25px;
+}
+.name {
+  color:  rgb(37, 59, 255);
+  font-size:50px;"
 }
