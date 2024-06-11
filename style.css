@@ -14,7 +14,13 @@ p {
 li {
   font-size: 25px;
 }
+<<<<<<< HEAD
 .name {
   color:  rgb(37, 59, 255);
   font-size:50px;
 }
+=======
+ul {
+  font-size: 25px;
+}
+>>>>>>> ab76b60046b2943dcc8a5bb718a55790f2a05601
