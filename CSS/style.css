@@ -1,8 +1,9 @@
-.banner{
-  background-image: url(/Img/banner.avif);
-  padding: 250px;
-  background-size: cover;
-}
 *{
   font-family: "Poppins", sans-serif;
+}
+.banner{
+  background-image: url(/Img/slide1.jpg);
+  padding: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
