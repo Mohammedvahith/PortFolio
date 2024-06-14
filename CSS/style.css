@@ -1,20 +1,8 @@
-body {
-  background-color: rgb(181, 181, 181);
+.banner{
+  background-image: url(/Img/banner.avif);
+  padding: 250px;
+  background-size: cover;
 }
-h2{
-  color:  rgb(37, 59, 255);
-  font-size:50px;
-}
-h3 {
-  color:  rgb(37, 59, 255);
-}
-p {
-  font-size: 25px;
-}
-li {
-  font-size: 25px;
-}
-.name {
-  color:  rgb(37, 59, 255);
-  font-size:50px;
+*{
+  font-family: "Poppins", sans-serif;
 }
