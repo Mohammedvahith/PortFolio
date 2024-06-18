@@ -4,25 +4,10 @@ This is the source code for my personal portfolio website. It includes sections 
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Sections](#sections)
 - [Technologies Used](#technologies-used)
 - [Contact](#contact)
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/your-repo-name.git
-    ```
-2. Navigate to the project directory:
-    ```sh
-    cd your-repo-name
-    ```
-3. Open `index.html` in your browser to view the website.
 
 ## Usage
 
