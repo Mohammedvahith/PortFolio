@@ -17,4 +17,7 @@
             <!-- Add more contact information as necessary -->
      </ul>
      <p>Feel free to explore my projects and get in touch!</p>
+     <footer>
+            <p>&copy; 2024 Your Name</p>
+        </footer>
 
