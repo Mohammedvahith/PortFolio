@@ -1,19 +1,9 @@
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-window.onscroll = () => {
-  let top = window.scrollY;
-  sections.forEach(sec => {
-    let offset = sec.offsetTop;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute('id');
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(id)) {
-          link.classList.add('active');
-        }
-      });
-    }
-  });
-};
+document.addEventListener('visibilitychange', function () {
+  if (document.visibilityState === "visible") {
+      document.title = "Portfolio | Mohammed Vahith";
+      document.getElementById("icon").setAttribute("href", "../PortFolio/Img/logo.png");
+  } else {
+      document.title = "Come Back To Portfolio";
+      document.getElementById("icon").setAttribute("href", "../PortFolio/Img/logo.png");
+  }
+});
