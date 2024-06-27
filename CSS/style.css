@@ -31,6 +31,10 @@
 .contact{
   padding-top: 50px;
 }
-.github{
+#github{
   object-fit:contain;
+  
+}
+#sci{
+  object-fit:cover;
 }
