@@ -6,6 +6,8 @@
   padding: 190px 0;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 .card-img-top {
   width: 100%;
@@ -38,4 +40,15 @@
 }
 #sci{
   object-fit:cover;
+}
+.typing-text{
+  color: rgb(197, 2, 2);
+}
+.hoverImage img{
+  position: relative;
+  align-self: stretch;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 100%;
 }
