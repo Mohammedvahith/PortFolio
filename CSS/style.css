@@ -27,6 +27,7 @@
 .img-fluid {
   box-shadow: 0px 0px 50px;
   height: 85%;
+  pointer-events:none;
 }
 .contact{
   padding-top: 50px;
