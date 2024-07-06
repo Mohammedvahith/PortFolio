@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 nav-underline">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#about">about</a>
@@ -42,18 +42,18 @@
       </div>
     </div>
   </nav>
-  <section class="banner text-center text-uppercase">
+  <section class="banner text-center text-uppercase" id="home">
     <div class="container">
       <div class="row ">
         <div class="col-md-12">
-          <div class="w-75 me-auto text-start">
-            <h1 class="pb-2">
+          <div class="w-75 me-auto text-start content">
+            <h1>
               Hi There,<br>
             </h1>
-            <h1 class="pb-2">I'm mohammed vahith</h1>
-            <h2 class="pb-2">
+            <h1>I'm mohammed vahith</h1>
+            <h1>
               <p>i am into <span class="typing-text"></span></p>
-            </h2>
+            </h1>
             <a href="https://www.linkedin.com/in/mohammed-vahith/" class="btn btn-dark text-uppercase btn-lg">Connect
               with me</a>
           </div>
@@ -61,33 +61,36 @@
       </div>
     </div>
   </section>
-  <section class="py-5" id="about">
+  <section class="py-5 " id="about">
     <div class="container">
       <div class="row align-item-center">
-        <div class="col-md-6 pt-3 text-center hoverImage" oncontextmenu="return false">
-          <img draggable="false" src="./Img/me.jpg" alt="this is vahith image" class=" img-fluid w-75 rounded-4 ">
-        </div>
-        <div class="col-md-6">
-          <h4 class="py-4 fs-3">About me</h4>
-
-          <p class="pb-2 fs-6">
-            I'm currently pursuing a B.Tech in Computer Science and Engineering with a specialization in Artificial
-            Intelligence and Machine Learning at Periyar Maniammai Institute of Science & Technology.
-          </p>
-          <p class="pb-2 fs-6">
-            I am a dedicated professional with a strong foundation in web development, artificial intelligence, and
-            machine learning. Proficient in crafting responsive and user-friendly web applications, I leverage my skills
-            in HTML, CSS, JavaScript, and modern frameworks to deliver seamless online experiences.
-          </p>
-          <p class="pb-2 fs-6">
-            In the realm of AI and ML, I possess in-depth knowledge of machine learning algorithms, statistical
-            modeling, and data analysis, with hands-on experience in Python and its libraries. My passion lies in
-            applying these technologies to solve real-world problems, driving innovation and efficiency.
-          </p>
-          <p class="pb-2 fs-6">
-            Committed to continuous learning and staying abreast of the latest industry trends, I am eager to tackle new
-            challenges and contribute to groundbreaking projects in both web development and artificial intelligence.
-          </p>
+        <div class="image">
+          <div class="row align-item-center">
+            <div class="col-md-6 pt-3 text-center">
+              <img draggable="false" src="./Img/me.jpg" alt="this is vahith image"
+                class="img-fluid w-75 rounded-4 tilt">
+            </div>
+            <div class="col-md-6 content">
+              <h3 class="py-4">About me</h3>
+              <p class="pb-2 fs-6 text-start aboutpara ">
+                I am currently pursuing a B.Tech in Computer Science and Engineering with a focus on Artificial
+                Intelligence and Machine Learning at Periyar Maniammai Institute of Science & Technology. I have a strong foundation
+                in web development, artificial intelligence, and machine learning. I am skilled in creating user-friendly
+                web applications using HTML, CSS, JavaScript, and modern frameworks. In AI and ML, I have expertise in
+                machine learning algorithms, statistical modeling, and data analysis using Python and its libraries. I'm
+                committed to continuous learning and embracing new challenges in web development and artificial intelligence.
+              </p>
+              <div>
+                <p><span class="email text-capitalize"> email : </span> vahith2004@gmail.com</p>
+                <p><span class="place text-capitalize"> place : </span> Thanjavur, TamilNadu, India</p>
+              </div>
+              <div class="btn btn-outline-primary">
+                <a href="https://drive.google.com/file/d/1mrcj91VS1vLgJC22bpzCTYVIG1KT0dOD/view" target="_blank" class="btn"><span>Resume</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
   </section>
@@ -100,7 +103,7 @@
           </h4>
         </div>
         <div class="row">
-          <div class="col-md-3 pb-3 skill ">
+          <div class="col-md-3 pb-3 skill">
             <div class="card text-center" style="width: 18rem;">
               <img src="./Img/python.png" class="card-img-top w-25 m-auto pt-4" alt="html image">
               <div class="card-body">
@@ -259,6 +262,8 @@
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="./Javascript/script.js"></script>
 <script src="./Javascript/validation.js"></script>
 
