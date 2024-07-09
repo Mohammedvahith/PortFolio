@@ -14,7 +14,7 @@ document.addEventListener('visibilitychange', function () {
 let sections = document.querySelectorAll('section');
   let navLinks = document.querySelectorAll('nav a');
   window.addEventListener('scroll', function() {
-    let top = window.scrollY + 200;
+    let top = window.scrollY + 300;
     sections.forEach(section => {
       let offset = section.offsetTop;
       let height = section.offsetHeight;
