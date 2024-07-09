@@ -1,58 +1,93 @@
 *{
   font-family: "Poppins", sans-serif;
 }
+
 .banner{
   background-image: url(../Img/slide1.jpg);
-  padding: 190px 0;
+  height: 100dvh;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
+
+.landing-page{
+  max-width: 800px;
+  display: flex;
+  min-height: 90dvh;
+  align-items: center;
+}
+
 .card-img-top {
   width: 100%;
   height: 10vh;
   object-fit: cover;
 }
+
 .logo1{
   width: 5%;
   height: 5%;
 }
+
 .skill{
   display: flex;
   justify-content: center;
 }
+
 .py-5 {
   padding-top: 7rem !important;
   padding-bottom: 3rem !important;
 }
+
+.about{
+  min-height: 100dvw;
+}
+
 .img-fluid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 85%;
+  height: auto;
 }
+
 .contact{
   padding-top: 50px;
 }
+
 #github{
   object-fit:contain;
-  
 }
+
 #sci{
   object-fit:cover;
 }
+
 .typing-text{
   color: rgb(197, 2, 2);
 }
-.aboutpara{
-  width: 100%;
+
+.myimg{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
+
+.aboutpara{
+  width: auto;
+}
+
+.content{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+}
+
 .email ,
 .place{
   color: blue;
 }
-.aboutme{
-  padding-top: 15%;
-}
+
+
 
 /* fadding bottom
 
@@ -70,4 +105,4 @@
     animation-range: contain 0% contain 50%;
   }
 }
-  */
+*/
