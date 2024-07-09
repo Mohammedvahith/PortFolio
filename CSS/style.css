@@ -18,6 +18,22 @@
   align-items: center;
 }
 
+.about{
+  height: auto;
+}
+
+.img-fluid {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: auto;
+  width: auto;
+}
+
+.myimg{
+  display: flex;
+  justify-content: center;
+  height: 15cm;
+  padding: 20px;
+}
 .card-img-top {
   width: 100%;
   height: 10vh;
@@ -39,16 +55,6 @@
   padding-bottom: 3rem !important;
 }
 
-.about{
-  height: auto;
-}
-
-.img-fluid {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: auto;
-  width: auto;
-}
-
 .contact{
   padding-top: 50px;
 }
@@ -65,11 +71,7 @@
   color: rgb(197, 2, 2);
 }
 
-.myimg{
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
+
 
 .aboutpara{
   width: auto;
