@@ -1,15 +1,14 @@
-document.addEventListener('visibilitychange', function () {
-  const favicon = document.getElementById("icon");
-  const logoPath = "../PortFolio/Img/Mcircleperfect.ico";
-
-  if (document.visibilityState === "visible") {
-    document.title = "Portfolio | Mohammed Vahith";
-    if (favicon) favicon.setAttribute("href", logoPath);
-  } else {
-    document.title = "Come Back To Portfolio";
-    if (favicon) favicon.setAttribute("href", logoPath);
-  }
-});
+document.addEventListener('visibilitychange',
+  function () {
+      if (document.visibilityState === "visible") {
+          document.title = "Portfolio | Mohammed Vahith";
+          $("#favicon").attr("href", "Img/Mcircleperfect.ico");
+      }
+      else {
+          document.title = "Come Back To Portfolio";
+          $("#favicon").attr("href", "Img/Mcircleperfect.ico");
+      }
+  });
 
 window.onload = function() {
   window.scrollTo({
