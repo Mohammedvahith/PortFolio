@@ -10,6 +10,7 @@ document.addEventListener('visibilitychange', function () {
       if (favicon) favicon.setAttribute("href", logoPath);
   }
 });
+
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
   strings: ["ml engineer","ai engineer","frontend development", "backend development", "web designing","web development"],
@@ -18,6 +19,7 @@ var typed = new Typed(".typing-text", {
   backSpeed: 25,
   backDelay: 500,
 });
+
 // <!-- typed js effect ends -->
 window.onload = function() {
   const imageElement = document.querySelector('.hoverImage');
