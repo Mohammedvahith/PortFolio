@@ -1,6 +1,6 @@
 document.addEventListener('visibilitychange', function () {
   const favicon = document.getElementById("icon");
-  const logoPath = "../PortFolio/Img/Mcircleperfect.ico";
+  const logoPath = "../Img/Mcircleperfect.ico";
 
   if (document.visibilityState === "visible") {
     document.title = "Portfolio | Mohammed Vahith";
