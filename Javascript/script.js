@@ -1,40 +1,89 @@
 document.addEventListener('visibilitychange', function () {
+  const favicon = document.getElementById("icon");
+  const logoPath = "../PortFolio/Img/Mcircleperfect.png";
+
   if (document.visibilityState === "visible") {
-      document.title = "Portfolio | Mohammed Vahith";
-      document.getElementById("icon").setAttribute("href", "../PortFolio/Img/logo.png");
+    document.title = "Portfolio | Mohammed Vahith";
+    if (favicon) favicon.setAttribute("href", logoPath);
   } else {
-      document.title = "Come Back To Portfolio";
-      document.getElementById("icon").setAttribute("href", "../PortFolio/Img/logo.png");
+    document.title = "Come Back To Portfolio";
+    if (favicon) favicon.setAttribute("href", logoPath);
   }
 });
+
+window.onload = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+let sections = document.querySelectorAll('section');
+  let navLinks = document.querySelectorAll('nav a');
+  window.addEventListener('scroll', function() {
+    let top = window.scrollY + 200;
+    sections.forEach(section => {
+      let offset = section.offsetTop;
+      let height = section.offsetHeight;
+      let id = section.getAttribute('id');
+      if (top >= offset && top < offset + height) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+        document.querySelector('nav a[href*=' + id + ']').classList.add('active');
+      }
+    });
+  });
+
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-  strings: ["ml engineer","ai engineer","frontend development", "backend development", "web designing","web development"],
+  strings: ["ml engineer", "ai engineer", "frontend development", "backend development", "web designing", "web development"],
   loop: true,
   typeSpeed: 50,
   backSpeed: 25,
   backDelay: 500,
 });
 // <!-- typed js effect ends -->
-window.onload = function() {
-  const imageElement = document.querySelector('.hoverImage');
-  if (imageElement) {
-      const handleMouseMove = (e) => {
-          let rect = imageElement.getBoundingClientRect();
-          let x = e.clientX - rect.left;
-          let y = e.clientY - rect.top;
 
-          let dx = (x - rect.width / 2) / (rect.width / 2);
-          let dy = (y - rect.height / 2) / (rect.height / 2);
+// <!-- tilt js effect starts -->
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 15,
+});
+// <!-- tilt js effect ends --> 
 
-          imageElement.style.transform = `perspective(500px) rotateY(${dx * 5}deg) rotateX(${-dy * 5}deg)`;
-      };
+/* ===== SCROLL REVEAL ANIMATION ===== */
+const srtop = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 1000,
+  reset: true
+});
 
-      const handleMouseLeave = () => {
-          imageElement.style.transform = "";
-      };
+/* SCROLL HOME */
+srtop.reveal('.banner .content h1', { delay: 200 });
+srtop.reveal('.banner .content .btn', { delay: 200 });
 
-      imageElement.addEventListener('mousemove', handleMouseMove);
-      imageElement.addEventListener('mouseleave', handleMouseLeave);
-  }
-}
+/* SCROLL ABOUT */
+srtop.reveal('#about .content h3', { delay: 200 });
+srtop.reveal('#about .content .tag', { delay: 200 });
+srtop.reveal('#about .content p', { delay: 200 });
+srtop.reveal('#about .content .box-container', { delay: 200 });
+srtop.reveal('#about .content .btn', { delay: 200 });
+
+/* SCROLL SKILLS */
+srtop.reveal('#skills .container', { interval: 200 });
+srtop.reveal('#skills .container .bar', { delay: 400 });
+
+/* SCROLL EDUCATION 
+srtop.reveal('.education .box', { interval: 200 });
+*/
+/* SCROLL PROJECTS 
+srtop.reveal('.work .box', { interval: 200 });
+*/
+/* SCROLL EXPERIENCE 
+srtop.reveal('.experience .timeline', { delay: 400 });
+srtop.reveal('.experience .timeline .container', { interval: 400 });
+*/
+/* SCROLL CONTACT */
+srtop.reveal('.contact-form-1', { delay: 400 });
+srtop.reveal('.contact .container .form-group', { delay: 400 });

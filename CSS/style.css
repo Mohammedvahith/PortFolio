@@ -1,54 +1,111 @@
 *{
   font-family: "Poppins", sans-serif;
 }
+
 .banner{
   background-image: url(../Img/slide1.jpg);
-  padding: 190px 0;
+  height: 100dvh;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+.landing-page{
+  max-width: 800px;
+  display: flex;
+  min-height: 85dvh;
+  align-items: center;
+}
+
+.about{
+  height: auto;
+}
+
+.img-fluid {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: auto;
+  width: auto;
+}
+
+.myimg{
+  display: flex;
+  justify-content: center;
+  height: 15cm;
+  padding: 20px;
 }
 .card-img-top {
   width: 100%;
   height: 10vh;
   object-fit: cover;
 }
+
 .logo1{
   width: 5%;
   height: 5%;
 }
+
 .skill{
   display: flex;
   justify-content: center;
 }
+
 .py-5 {
   padding-top: 7rem !important;
   padding-bottom: 3rem !important;
 }
-.img-fluid {
-  box-shadow: 0px 0px 50px;
-  height: 85%;
-  pointer-events:none;
-}
+
 .contact{
   padding-top: 50px;
 }
+
 #github{
   object-fit:contain;
-  
 }
+
 #sci{
   object-fit:cover;
 }
+
 .typing-text{
   color: rgb(197, 2, 2);
 }
-.hoverImage img{
-  position: relative;
-  align-self: stretch;
-  flex-shrink: 0;
-  object-fit: cover;
-  border-radius: 10px;
-  max-width: 100%;
+
+
+
+.aboutpara{
+  width: auto;
 }
+
+.content{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+}
+
+.email ,
+.place{
+  color: blue;
+}
+
+
+
+/* fadding bottom
+
+@keyframes slide-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(5vh);
+  }
+}
+@media (prefers-reduced-motion: no-preference){
+  .card{
+    view-timeline-name: --item-timeline;
+    animation: slide-fade-in both;
+    animation-timeline: --item-timeline;
+    animation-range: contain 0% contain 50%;
+  }
+}
+*/
