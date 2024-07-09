@@ -11,10 +11,17 @@ document.addEventListener('visibilitychange', function () {
   }
 });
 
+window.onload = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 let sections = document.querySelectorAll('section');
   let navLinks = document.querySelectorAll('nav a');
   window.addEventListener('scroll', function() {
-    let top = window.scrollY ;
+    let top = window.scrollY + 200;
     sections.forEach(section => {
       let offset = section.offsetTop;
       let height = section.offsetHeight;
