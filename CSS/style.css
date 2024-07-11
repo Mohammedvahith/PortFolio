@@ -28,6 +28,20 @@
   width: auto;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(204, 204, 204);
+}
+html::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+}
+
 .myimg{
   display: flex;
   justify-content: center;
@@ -70,8 +84,6 @@
 .typing-text{
   color: rgb(197, 2, 2);
 }
-
-
 
 .aboutpara{
   width: auto;

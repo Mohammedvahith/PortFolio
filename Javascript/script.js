@@ -1,3 +1,12 @@
+
+document.querySelector('a[href="#home"]').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent default anchor click behavior
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});
+
 // Disable developer mode
 document.onkeydown = function (e) {
   // F12 key
