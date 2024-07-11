@@ -1,3 +1,41 @@
+
+document.querySelector('a[href="#home"]').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent default anchor click behavior
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});
+
+// Disable developer mode
+document.onkeydown = function (e) {
+  // F12 key
+  if (e.code === 'F12') {
+      e.preventDefault();
+      return false;
+  }
+  // Ctrl + Shift + I
+  if (e.ctrlKey && e.shiftKey && e.code === 'KeyI') {
+      e.preventDefault();
+      return false;
+  }
+  // Ctrl + Shift + C
+  if (e.ctrlKey && e.shiftKey && e.code === 'KeyC') {
+      e.preventDefault();
+      return false;
+  }
+  // Ctrl + Shift + J
+  if (e.ctrlKey && e.shiftKey && e.code === 'KeyJ') {
+      e.preventDefault();
+      return false;
+  }
+  // Ctrl + U
+  if (e.ctrlKey && e.code === 'KeyU') {
+      e.preventDefault();
+      return false;
+  }
+};
+
 document.addEventListener('visibilitychange',
   function () {
       if (document.visibilityState === "visible") {
