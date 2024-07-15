@@ -102,12 +102,27 @@ html::-webkit-scrollbar-thumb {
   color: blue;
 }
 
-.project-list{
+.Projects-list {
+  display: grid;
+  grid-area: span;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; /* Adjust the gap as needed */
+  justify-items: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+}
+
+.project-item {
+  width: 100%; /* Ensure the card takes the full width of the grid cell */
+}
+
+.Projects-row{
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
+.Projects-img{
+  object-fit: contain;
+}
 /* fadding bottom
 
 @keyframes slide-fade-in {
