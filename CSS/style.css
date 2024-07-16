@@ -102,27 +102,97 @@ html::-webkit-scrollbar-thumb {
   color: blue;
 }
 
-.Projects-list {
-  display: grid;
-  grid-area: span;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px; /* Adjust the gap as needed */
-  justify-items: center; /* Centers items horizontally */
-  align-items: center; /* Centers items vertically */
+
+/*project section*/
+
+.project-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
 }
 
-.project-item {
-  width: 100%; /* Ensure the card takes the full width of the grid cell */
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.Projects-row{
+.project-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-border {
+  padding: 0; /* Adjust the padding as needed */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin: 10px; /* Adjust the margin as needed */
+  position: relative;
+}
+
+.project-card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 10px; /* Match the padding of image-border */
+  left: 10px; /* Match the padding of image-border */
+  right: 10px; /* Match the padding of image-border */
+  bottom: 10px; /* Match the padding of image-border */
+  background-color: rgba(0, 140, 186, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s ease;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 
-.Projects-img{
-  object-fit: contain;
+.image-border:hover .project-overlay {
+  opacity: 1;
 }
+
+.project-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.project-icon {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.project-icon:hover {
+  color: #ddd;
+}
+
+.project-card-body {
+  padding: 20px;
+}
+
+.project-card-title {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.project-card-text {
+  margin: 10px 0;
+  color: #555;
+}
+
+
 /* fadding bottom
 
 @keyframes slide-fade-in {
