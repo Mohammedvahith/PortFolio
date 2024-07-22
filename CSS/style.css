@@ -226,7 +226,7 @@ main.row {
 
 .colm header.title {
   font-family: helvetica;
-  color: #11a372;
+  color: #000000;
   padding: 0px 0px 20px 30px;
 }
 
@@ -258,7 +258,7 @@ height: 16px;
 border-radius: 50%;
 right: calc(100% + 23px);
 top: 0;
-background-color: #11a372;
+background-color: #000000;
 border: 2px solid white;
 }
 
