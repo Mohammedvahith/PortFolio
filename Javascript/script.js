@@ -1,4 +1,3 @@
-
 document.querySelector('a[href="#home"]').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent default anchor click behavior
   window.scrollTo({
