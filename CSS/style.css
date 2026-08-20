@@ -142,7 +142,8 @@ html::-webkit-scrollbar-thumb {
 
 .project-card-img-top {
   width: 100%;
-  height: auto;
+  height: 280px;
+  object-fit: cover;
 }
 
 .project-overlay {
